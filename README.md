@@ -57,9 +57,18 @@ output is inconvenient, i.e. we want the un-listed version.
 That’s exactly what `regexcite::str_split_one()` does.
 
 ``` r
+if(!"devtools" %in% installed.packages()){install.packages("devtools")}
+
+library(devtools)
+#> Loading required package: usethis
+
+install_github("miguelayalar/regexcite")
+#> Skipping install of 'regexcite' from a github remote, the SHA1 (ffa16651) has not changed since last install.
+#>   Use `force = TRUE` to force installation
 library(regexcite)
 
-#str_split_one(x, pattern = ",")
+str_split_one(x, pattern = ",")
+#> [1] "alfa"    "bravo"   "charlie" "delta"
 ```
 
 Use `str_split_one()` when the input is known to be a single string. For
@@ -70,8 +79,10 @@ safety, it will error if its input has length greater than one.
 `pattern` to be matched.
 
 ``` r
-#str_split_one(x, pattern = ",", n = 2)
+str_split_one(x, pattern = ",", n = 2)
+#> [1] "alfa"                "bravo,charlie,delta"
 
 y <- "192.168.0.1"
-#str_split_one(y, pattern = stringr::fixed("."))
+str_split_one(y, pattern = stringr::fixed("."))
+#> [1] "192" "168" "0"   "1"
 ```
