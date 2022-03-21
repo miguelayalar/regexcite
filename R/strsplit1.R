@@ -1,4 +1,3 @@
-#' Split a string
 #' Separates a single string into a vector of multiple strings
 #'
 #' @param x A character vector with one element
