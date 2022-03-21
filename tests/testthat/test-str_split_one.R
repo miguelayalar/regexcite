@@ -1,5 +1,5 @@
 test_that("str_split_one() splits a string", {
-  expect_equal(str_split_one("a,b,c", split = ","), c("a", "b", "c"))
+  expect_equal(str_split_one("a,b,c", ","), c("a", "b", "c"))
 })
 
 test_that("str_split_one() errors if input length > 1", {
