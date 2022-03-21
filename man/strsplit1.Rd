@@ -2,8 +2,7 @@
 % Please edit documentation in R/strsplit1.R
 \name{strsplit1}
 \alias{strsplit1}
-\title{Split a string
-Separates a single string into a vector of multiple strings}
+\title{Separates a single string into a vector of multiple strings}
 \usage{
 strsplit1(x, split)
 }
@@ -16,7 +15,6 @@ strsplit1(x, split)
 A character vector
 }
 \description{
-Split a string
 Separates a single string into a vector of multiple strings
 }
 \examples{
