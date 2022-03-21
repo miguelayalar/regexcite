@@ -63,8 +63,16 @@ library(devtools)
 #> Loading required package: usethis
 
 install_github("miguelayalar/regexcite")
-#> Skipping install of 'regexcite' from a github remote, the SHA1 (ffa16651) has not changed since last install.
-#>   Use `force = TRUE` to force installation
+#> Downloading GitHub repo miguelayalar/regexcite@HEAD
+#> 
+#> * checking for file ‘/private/var/folders/t7/rpfm2__n6r939snv6vql2v9w0000gn/T/Rtmp3WZtK2/remotes61b439c9ba61/miguelayalar-regexcite-3b1d037/DESCRIPTION’ ... OK
+#> * preparing ‘regexcite’:
+#> * checking DESCRIPTION meta-information ... OK
+#> * checking for LF line-endings in source and make files and shell scripts
+#> * checking for empty or unneeded directories
+#> * building ‘regexcite_0.0.0.9000.tar.gz’
+#> Installing package into '/private/var/folders/t7/rpfm2__n6r939snv6vql2v9w0000gn/T/RtmpMJAuyj/temp_libpath55e1442962ad'
+#> (as 'lib' is unspecified)
 library(regexcite)
 
 str_split_one(x, pattern = ",")
